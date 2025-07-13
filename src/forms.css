@@ -1,0 +1,93 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: var(--section-resume-bg);
+
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 240px;
+
+    margin-bottom: 12px;
+
+    align-items: flex-start;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+}
+
+input[type="text"],input[type="email"] {
+    border: none;
+    appearance: none;
+    padding: 7px;
+
+    border-radius: 3px;
+    width: 100%;
+    
+    background-color: var(--main-bg-color);
+
+}
+
+input[type="date"] {
+    border: none;
+    appearance: none;
+    padding: 7px;
+
+    border-radius: 3px;
+    width: 100%;
+    
+    background-color: var(--main-bg-color);
+}
+
+input[type="text"]:hover, input[type="email"]:hover,
+input[type="date"]:hover {
+    border: 1px solid blue;
+}
+
+input[type="text"]:focus, input[type="email"]:focus,
+input[type="date"]:focus {
+    border: 1px solid #333;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+ul {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+}
+
+textArea {
+    border: none;
+    padding: 7px;   
+    border-radius: 3px;
+    width: 100%;
+
+    background-color: var(--main-bg-color);
+    font-family: inherit;
+    font-size: 12px;
+
+    white-space: pre;
+}
+
+.emailError {
+    display: none;
+    color: red;
+}
